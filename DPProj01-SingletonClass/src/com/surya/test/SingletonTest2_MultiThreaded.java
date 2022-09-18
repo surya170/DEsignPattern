@@ -15,6 +15,8 @@ public class SingletonTest2_MultiThreaded  {
 	    t1.start();
 	    t2.start();
 	    
+	    
+	    
 	} // main
 } // class
   
