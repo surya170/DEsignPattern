@@ -3,7 +3,7 @@ package com.surya.dp;
 
 public class Printer {
 
-	private static Printer INSTANCE;
+	//private static volatile Printer INSTANCE;
 	// private static Printer INSTANCE = new Printer(); // eager Instance()
 
 	// private constructor
@@ -12,6 +12,7 @@ public class Printer {
 	}
 
 	// synchronized static factory method
+	/*
 	public static Printer getInstance() {
 		// singleton logic
 		if (INSTANCE == null) { // 1st NULL Check
@@ -23,10 +24,27 @@ public class Printer {
 		return INSTANCE;
 
 	} // method
-
+	*/
+	
+	// Single NULL Check
 	/*
-	 * public static Printer getInstance() { return INSTANCE; }
-	 */
+	public static Printer getInstance() {
+		synchronized (Printer.class) {
+			 if(INSTANCE == null)
+				  INSTANCE = new Printer();
+		}
+		return INSTANCE;
+	}
+	*/
+
+	public static class InnerPrinter {
+		 private static Printer INSTANCE = new Printer(); // eager Instance()
+	}
+
+	// Factory method 
+	 public static Printer getInstance() {
+		 return InnerPrinter.INSTANCE; 
+      }
 
 	// Business method
 	public void print(String msg) {
