@@ -12,7 +12,7 @@ public class SingletonTest2_MultiThreaded  {
 		Thread t1 = new Thread(servlet);
 	    Thread t2 = new Thread(servlet);
 	    Thread t3 = new Thread(servlet);
-	    
+	     
 	    t1.start();
 	    t2.start();
 	    t3.start();
