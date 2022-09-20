@@ -1,7 +1,9 @@
 
 package com.surya.dp;
 
-public class Printer {
+import com.surya.commons.CommonsUtil;
+
+public class Printer extends CommonsUtil {
 
 	//private static volatile Printer INSTANCE;
 	// private static Printer INSTANCE = new Printer(); // eager Instance()
