@@ -8,8 +8,5 @@ public class CommonsUtil implements Cloneable ,Serializable{
 	public Object clone() throws CloneNotSupportedException {
 		return super.clone();  // Use clone() of java.lang.Object class for cloning process
 	}
-	
-	
-	
 
 }
