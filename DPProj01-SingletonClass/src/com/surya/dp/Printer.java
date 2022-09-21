@@ -15,7 +15,7 @@ public class Printer extends CommonsUtil {
 		  System.out.println("Printer :: 0-Param Constructor");
 	}
 
-	// synchronized static factory method
+	// Synchronized static factory method
 	/*
 	public static Printer getInstance() {
 		// singleton logic
