@@ -3,13 +3,13 @@ package com.surya.dp;
 
 import com.surya.commons.CommonsUtil;
 
-public class Printer1 extends CommonsUtil {
+public class Printer2 extends CommonsUtil {
 
 	//private static volatile Printer INSTANCE;
 	// private static Printer INSTANCE = new Printer(); // eager Instance()
 
 	// private constructor
-	private Printer1() {
+	private Printer2() {
 		if(InnerPrinter.INSTANCE != null) 
 			  throw new RuntimeException("Object is already created!!!");
 		  System.out.println("Printer :: 0-Param Constructor");
@@ -42,11 +42,11 @@ public class Printer1 extends CommonsUtil {
 	*/
 
 	public static class InnerPrinter {
-		 private static Printer1 INSTANCE = new Printer1(); // eager Instance()
+		 private static Printer2 INSTANCE = new Printer2(); // eager Instance()
 	}
 
 	// Factory method 
-	 public static Printer1 getInstance() {
+	 public static Printer2 getInstance() {
 		 return InnerPrinter.INSTANCE; 
       }
 	 
