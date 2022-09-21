@@ -13,7 +13,7 @@ public class SingletonTest1_Serialization {
 			   
         	   // get  Singleton Java Class object 
         	   Printer1 p1 = Printer1.getInstance();
-        	   // Write Object Data to File using Object InputStream ( Seriallization Process)
+        	   // Write Object Data to File using Object InputStream ( Serialization Process)
         	   ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream("printer_data.ser"));
         	   oos.writeObject(p1);
         	   oos.flush();  // writes data from buffer to destination 
