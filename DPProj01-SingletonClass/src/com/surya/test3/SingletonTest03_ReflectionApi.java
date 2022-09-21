@@ -24,8 +24,7 @@ public class SingletonTest03_ReflectionApi {
 			System.out.println(p1.hashCode()+" "+p2.hashCode()+" "+p3.hashCode());
 			
 		} catch(InstantiationException ise) { 
-			ise.printStackTrace();
-			
+			ise.printStackTrace();	
 		}
 		catch(Exception e) {
 			e.printStackTrace();
