@@ -6,7 +6,7 @@ import java.io.ObjectOutputStream;
 
 import com.surya.dp.Printer2;
 
-public class SingletonTest2_Serialization {
+public class SingletonTest3_Serialization {
 
 	public static void main(String[] args) {
            try {

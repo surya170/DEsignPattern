@@ -2,7 +2,7 @@ package com.surya.test3;
 
 import com.surya.dp.Printer2;
 
-public class SingletonTest2_Cloning {
+public class SingletonTest3_Cloning {
 	
 	public static void main(String[] args) {
        // Get Singleton java class object

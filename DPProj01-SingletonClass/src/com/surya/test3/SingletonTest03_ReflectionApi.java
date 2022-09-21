@@ -4,7 +4,7 @@ import java.lang.reflect.Constructor;
 
 import com.surya.dp.Printer2;
 
-public class SingletonTest02_ReflectionApi {
+public class SingletonTest03_ReflectionApi {
 
 	public static void main(String[] args) {
         // get single object of singleton java class using static factory method

@@ -7,7 +7,7 @@ import java.io.ObjectInputStream;
 import com.surya.dp.Printer1;
 import com.surya.dp.Printer2;
 
-public class SingletonTest2_DeSerialization {
+public class SingletonTest3_DeSerialization {
 
 	public static void main(String[] args) {
 		Printer2 p1 = Printer2.getInstance();
