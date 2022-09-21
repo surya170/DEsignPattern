@@ -2,13 +2,13 @@ package com.surya.test2;
 
 import java.lang.reflect.Constructor;
 
-import com.surya.dp.Printer1;
+import com.surya.dp.Printer2;
 
-public class SingletonTest01_ReflectionApi {
+public class SingletonTest02_ReflectionApi {
 
 	public static void main(String[] args) {
         // get single object of singleton java class using static factory method
-		Printer1 p1 = Printer1.getInstance();
+		Printer2 p1 = Printer2.getInstance();
 		try {
 			 // get java.lang.class object represening printer class
 			Class c = p1.getClass(); // getClass() is public method  of java.lang.Object class
@@ -16,8 +16,8 @@ public class SingletonTest01_ReflectionApi {
 			Constructor[] cons = c.getDeclaredConstructors();
 			cons[0].setAccessible(true);  // give accessed to private constructor.
 			// create object using  the accessed private Constructor 
-			Printer1 p2 = (Printer1) cons[0].newInstance();
-			Printer1 p3 = (Printer1) cons[0].newInstance();
+			Printer2 p2 = (Printer2) cons[0].newInstance();
+			Printer2 p3 = (Printer2) cons[0].newInstance();
 			System.out.println("Objects Are Created by Using Reflection API");
 			System.out.println(p1.hashCode()+" "+p2.hashCode()+" "+p3.hashCode());
 			
