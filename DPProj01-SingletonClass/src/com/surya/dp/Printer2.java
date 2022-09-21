@@ -6,7 +6,7 @@ import com.surya.commons.CommonsUtil;
 public class Printer2 extends CommonsUtil {
 
 
-	// private constructor  :: It is used to Stop creating object using new operator and Reflection API.
+	// private constructor  :: It is used to Stop creating object using new Operator and Reflection API.
 	private Printer2() {
 		if(InnerPrinter.INSTANCE != null) 
 			  throw new RuntimeException("Object is already created!!!");
