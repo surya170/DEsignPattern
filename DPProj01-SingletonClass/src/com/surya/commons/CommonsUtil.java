@@ -1,6 +1,8 @@
 package com.surya.commons;
 
-public class CommonsUtil implements Cloneable {
+import java.io.Serializable;
+
+public class CommonsUtil implements Cloneable ,Serializable{
 	
 	@Override
 	public Object clone() throws CloneNotSupportedException {
