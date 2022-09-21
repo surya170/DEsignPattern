@@ -6,7 +6,7 @@ import com.surya.commons.CommonsUtil;
 public class Printer1 extends CommonsUtil {
 
 	  private static volatile Printer1 INSTANCE;
-	// private static Printer INSTANCE = new Printer(); // eager Instance()
+	// private static Printer INSTANCE = new Printer(); // Eager Instance()
 
 	// private constructor
 	private Printer1() {
