@@ -10,7 +10,9 @@ public class Printer extends CommonsUtil {
 
 	// private constructor
 	private Printer() {
-		System.out.println("Printer:: 0-param Constructor ");
+		if(InnerPrinter.INSTANCE != null) 
+			  throw new RuntimeException("Object is already created!!!");
+		  System.out.println("Printer :: 0-Param Constructor");
 	}
 
 	// synchronized static factory method
@@ -47,7 +49,19 @@ public class Printer extends CommonsUtil {
 	 public static Printer getInstance() {
 		 return InnerPrinter.INSTANCE; 
       }
-
+	 
+	 // To stop cloning
+	 @Override
+	public Object clone() throws CloneNotSupportedException {
+		 throw new CloneNotSupportedException("Cloning not allowed in singleton Printer class");
+		//return InnerPrinter.INSTANCE;
+	}
+     // To Stop Deseriallization 
+	 private static final long serialVersionUID = 5354353L;
+	 public Object readResolve() {
+		  return InnerPrinter.INSTANCE;
+		 // throw new IllegalArgumentException("Deserialization is not allowed on singleton");
+	 }
 	// Business method
 	public void print(String msg) {
 		System.out.println(msg);
