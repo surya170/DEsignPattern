@@ -1,13 +1,13 @@
 package com.surya.test2;
 
-import com.surya.dp.Printer1;
+import com.surya.dp.Printer2;
 
 public class TicketBookingServlet implements Runnable {
   
 	// run method 
 	@Override
 	public void run() {
-        Printer1 p1 = Printer1.getInstance();
+        Printer2 p1 = Printer2.getInstance();
        System.out.println(p1.hashCode());        
 	}
 	
