@@ -5,18 +5,17 @@ import com.surya.commons.CommonsUtil;
 
 public class Printer extends CommonsUtil {
 
-	//private static volatile Printer INSTANCE;
+	  private static volatile Printer INSTANCE;
 	// private static Printer INSTANCE = new Printer(); // eager Instance()
 
 	// private constructor
 	private Printer() {
-		if(InnerPrinter.INSTANCE != null) 
+		if(INSTANCE != null) 
 			  throw new RuntimeException("Object is already created!!!");
 		  System.out.println("Printer :: 0-Param Constructor");
 	}
 
 	// Synchronized static factory method
-	/*
 	public static Printer getInstance() {
 		// singleton logic
 		if (INSTANCE == null) { // 1st NULL Check
@@ -28,27 +27,8 @@ public class Printer extends CommonsUtil {
 		return INSTANCE;
 
 	} // method
-	*/
+
 	
-	// Single NULL Check
-	/*
-	public static Printer getInstance() {
-		synchronized (Printer.class) {
-			 if(INSTANCE == null)
-				  INSTANCE = new Printer();
-		}
-		return INSTANCE;
-	}
-	*/
-
-	public static class InnerPrinter {
-		 private static Printer INSTANCE = new Printer(); // eager Instance()
-	}
-
-	// Factory method 
-	 public static Printer getInstance() {
-		 return InnerPrinter.INSTANCE; 
-      }
 	 
 	 // To stop cloning
 	 @Override
