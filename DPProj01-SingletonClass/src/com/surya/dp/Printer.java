@@ -39,7 +39,7 @@ public class Printer extends CommonsUtil {
      // To Stop Deseriallization 
 	 private static final long serialVersionUID = 5354353L;
 	 public Object readResolve() {
-		  return InnerPrinter.INSTANCE;
+		  return INSTANCE;
 		 // throw new IllegalArgumentException("Deserialization is not allowed on singleton");
 	 }
 	// Business method
