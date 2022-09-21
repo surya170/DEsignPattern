@@ -1,7 +1,7 @@
 //printer Class
 package com.surya.test;
 
-import com.surya.dp.Printer;
+import com.surya.dp.Printer1;
 
 public class SingletonTest2_MultiThreaded  {
 
