@@ -4,7 +4,7 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.ObjectOutputStream;
 
-import com.surya.dp.Printer2;
+import com.surya.dp.Printer3;
 
 public class SingletonTest3_Serialization {
 
@@ -12,7 +12,7 @@ public class SingletonTest3_Serialization {
            try {
 			   
         	   // get  Singleton Java Class object 
-        	   Printer2 p1 = Printer2.getInstance();
+        	   Printer3 p1 = Printer3.getInstance();
         	   // Write Object Data to File using Object InputStream ( Serialization Process)
         	   ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream("printer_data.ser"));
         	   oos.writeObject(p1);
