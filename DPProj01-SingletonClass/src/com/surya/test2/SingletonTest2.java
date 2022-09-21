@@ -15,6 +15,6 @@ public class SingletonTest2 {
           System.out.println("p1==p2? "+(p1==p2));
           
 		
-	} // main
+	} //main
 } // Class
   
