@@ -3,7 +3,7 @@ package com.surya.test;
 
 import com.surya.dp.Printer1;
 
-public class SingletonTest2_MultiThreaded  {
+public class SingletonTest1_MultiThreaded  {
 
 	public static void main(String[] args) throws Exception {
 		
