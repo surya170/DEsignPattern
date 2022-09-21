@@ -10,6 +10,7 @@ public class SingletonTest03_ReflectionApi {
 	public static void main(String[] args) {
         // get single object of singleton java class using static factory method
 		Printer3 p1 = Printer3.getInstance();
+		System.out.println(p1.hashCode());
 		try {
 			 // get java.lang.class object represening printer class
 			Class c = p1.getClass(); // getClass() is public method  of java.lang.Object class
