@@ -9,6 +9,8 @@ import com.surya.dp.Printer1;
 public class SingletonTest1_DeSerialization {
 
 	public static void main(String[] args) {
+		Printer1 p1 = Printer1.getInstance();
+		System.out.println(p1.hashCode());
            try {
         	   // ReCreate Object having data collect from the file using DeSeriliazation ProceSS 
         	   ObjectInputStream ois = new ObjectInputStream(new  FileInputStream("Printer_data.ser"));
