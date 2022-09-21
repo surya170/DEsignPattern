@@ -10,7 +10,7 @@ public class SingletonTest1_DeSerialization {
 
 	public static void main(String[] args) {
            try {
-        	   // ReCreate Object having data collect from the file using DeSeriliazation Process 
+        	   // ReCreate Object having data collect from the file using DeSeriliazation ProceSS 
         	   ObjectInputStream ois = new ObjectInputStream(new  FileInputStream("Printer_data.ser"));
         	   Printer1 p2 = (Printer1) ois.readObject();
         	   p2.print("Hello");
