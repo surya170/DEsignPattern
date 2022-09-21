@@ -5,7 +5,7 @@ import com.surya.dp.Printer1;
 public class SingletonTest1_Cloning {
 	
 	public static void main(String[] args) {
-       // Get Singleton java class object 
+       // Get Singleton java class object
 		Printer1 p1 = Printer1.getInstance();
 		// do cloning on object 
 		try {
