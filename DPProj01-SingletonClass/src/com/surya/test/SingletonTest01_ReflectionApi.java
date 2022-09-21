@@ -10,7 +10,7 @@ public class SingletonTest01_ReflectionApi {
         // get single object of singleton java class using static factory method
 		Printer1 p1 = Printer1.getInstance();
 		try {
-			 // get java.lang.class object represening Printer class
+			 // get java.lang.class object represening printer class
 			Class c = p1.getClass(); // getClass() is public method  of java.lang.Object class
 			// get All The Constructors of the Printer class
 			Constructor[] cons = c.getDeclaredConstructors();
