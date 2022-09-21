@@ -16,5 +16,5 @@ public class SingletonTest1 {
           
 		
 	} // main
-} // class
+} // Class
   
